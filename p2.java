@@ -1,14 +1,27 @@
 public class p2{
     public static void main(String[] args) {
-        int a = 10;
-        int b = 10;
+       int balance = 1000;
 
-        if(a > b){
-            System.out.println(a);
-        }else if(a < b){
-            System.out.println(b);
+       //System.out.println("Deposit : " + Deposit(balance, 1100));
+       System.out.println("Deposit : " + withdow(balance, 100));
+    }
+
+    public static int Deposit(int balance,int amount){
+        if(balance < amount){
+            System.out.println("Insufficient balance");
         }else{
-            System.out.println("Both are equal");
+            balance = balance + amount;
         }
+        return balance;
+    }
+
+    public static int withdow(int balance,int amount){
+        if(balance < amount){
+            System.out.println("Insufficient balance");
+            return balance;
+        }else{
+            balance = balance - amount;
+        }
+        return balance;
     }
 }
