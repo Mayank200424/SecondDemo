@@ -2,12 +2,25 @@
 public class p1 {
 
     public static void main(String[] args) {
-        int a = 10;
-        int b = 20;
-        int c = 20;
+        add(10, 20);
+        sub(20, 10);
+        mul(10, 20);
+        div(10, 2);
+    }
 
-        int d = a + b + c;
+    public static void add(int a, int b) {
+        System.out.println(a + b);
+    }
 
-        System.out.println(d);
+    public static void sub(int a, int b) {
+        System.out.println(a - b);
+    }
+
+    public static void mul(int a, int b) {
+        System.out.println(a * b);
+    }
+
+    public static void div(int a, int b) {
+        System.out.println(a / b);
     }
 }
