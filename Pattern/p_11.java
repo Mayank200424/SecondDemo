@@ -3,11 +3,12 @@ public class p_11{
         int n = 5;
 
         for(int i = n; i >= 1; i--){
-            for(int j = n; j >= 1; j--){
-               
-                    System.out.print(j);
-               
-                
+            for(int j = 1; j <= i; j++){
+                if(i % 2 == 0){
+                    System.out.print("0");
+                }else{
+                    System.out.print("1");
+                }
             }
             System.out.println();
         }
